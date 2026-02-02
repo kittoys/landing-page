@@ -1,12 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  background-color: #efece3;
   font-family: Arial, sans-serif;
 }
 
 .hero-section {
-  text-align: center;
   min-height: 100vh;
   background-image: url(https://w.wallhaven.cc/full/e7/wallhaven-e72q88.png);
   background-size: cover;
@@ -19,7 +18,7 @@ body {
 }
 
 .navbar {
-  background: var(--white);
+  background: #fcfcfc;
   padding: 1.25rem 2rem;
   position: sticky;
   top: 0;
@@ -50,21 +49,21 @@ body {
 .logo-text {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #333333;
-  text-decoration: line none;
+  color: #000000;
+  text-decoration: none;
   font-family: "Noto Sans JP", sans-serif;
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
-  color: aqua;
 }
 
 .nav-menu a {
-  color: #333333;
+  background-color: transparent;
+  color: #000000;
   padding: 8px 15px;
-  border: 1px solid #ff4500;
+  border: 1px solid #4a70a9;
   text-decoration: none;
   margin-right: 20px; /* Memberi jarak antar tiap link */
   font-size: 1.1rem;
@@ -72,7 +71,8 @@ body {
 }
 
 .nav-menu a:hover {
-  color: #ff4500;
+  color: #4a70a9;
+  background-color: rgba(74, 112, 169, 0.1);
 }
 
 .btn-katana {
@@ -80,8 +80,8 @@ body {
   width: fit-content;
   margin: 20px auto 0 auto;
   padding: 5px 10px;
-  background-color: #ff4500;
-  color: #ffffff;
+  background-color: #4a70a9;
+  color: #efece3;
   text-decoration: none;
   border-radius: 5px;
   border: none;
@@ -90,12 +90,12 @@ body {
 }
 
 .story {
-  background-color: #1a1a1a;
+  background-color: #000000;
   padding: 80px 20px;
 }
 
 .story-container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   align-items: flex-start; /* Sejajar dari atas */
@@ -115,23 +115,17 @@ body {
 }
 
 .story h1 {
-  color: #ffffff;
+  color: #efece3;
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 10px;
   min-height: auto; /* HAPUS min-height 500px yang sebelumnya */
 }
 .story h2 {
-  color: #ff4500;
+  color: #8fabd4;
   text-align: center;
   font-size: 1.2rem;
   margin-bottom: 40px; /* Jarak antara judul dan konten bawah */
-}
-
-.story-img-container {
-  flex: 1;
-  display: flex;
-  justify-content: center;
 }
 
 .story-img {
@@ -143,9 +137,126 @@ body {
 }
 
 .story p {
-  color: #cccccc;
+  color: #efece3;
   font-size: 1.1rem;
   line-height: 1.7;
+  text-align: justify;
+  margin: 0;
+}
+
+.timeline-section {
+  background-color: #000000;
+  padding: 60px 20px;
+  color: #efece3;
+}
+
+.timeline-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  color: #efece3;
+  background-color: #000000;
+  border-radius: 15px;
+  border: 1px solid #8fabd4;
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.card-icon {
+  display: flex;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border: 1px solid #efece3;
+  box-shadow: 0 15px 30px rgba(255, 255, 255, 0.272);
+  transition: all 0.3s ease;
+}
+
+.card-tag {
+  color: #8fabd4;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.card h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin-top: 15px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.story-sword {
+  background-color: #000000;
+  color: #efece3;
+  padding: 60px 20px;
+}
+
+.card-content {
+  align-items: first-start;
+
+}
+
+.story-sword h1 {
+  color: #efece3;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+.story-sword h2 {
+  color: #8fabd4;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.story-sword-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 20px;
+}
+
+.story-sword-img {
+  width: 500px 200px;
+  max-width: 400px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.story-sword-text {
+  flex: 1.2;
+  text-align: justify;
+  margin: -10px 20px 50px 20px;
+  padding: 20px;
+  line-height: 2;
+}
+.story-sword-text h2 {
+  color: #8fabd4;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.story-sword-text p {
+  color: #efece3;
+  font-size: 1.1rem;
+  line-height: 2;
   text-align: justify;
   margin: 0;
 }
