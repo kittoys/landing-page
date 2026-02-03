@@ -208,7 +208,6 @@ body {
 
 .card-content {
   align-items: first-start;
-
 }
 
 .story-sword h1 {
@@ -259,4 +258,11 @@ body {
   line-height: 2;
   text-align: justify;
   margin: 0;
+}
+
+#sub {
+  margin-top: 15px;
+  font-size: 5rem;
+  color: red;
+  background-color: #000000;
 }
