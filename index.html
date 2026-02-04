@@ -10,6 +10,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <!-- Google Fonts untuk Noto Sans JP dan Sawarabi Mincho -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- navigation -->
@@ -37,10 +41,20 @@
         The Soul of the Samurai: Exploring the Art, History, and Legacy of
         Japan's Legendary Sword
       </p>
-      <button type="button" class="btn-katana">The story of katana</button>
+      <button
+        type="button"
+        class="btn-katana"
+        onclick="
+          document
+            .getElementById('history')
+            .scrollIntoView({ behavior: 'smooth' })
+        "
+      >
+        The story of katana
+      </button>
     </header>
 
-    <section class="story">
+    <section id="history" class="story">
       <h1>History of the Katana</h1>
       <h2>
         A journey through centuries of evolution, from battlefield necessity to
@@ -159,35 +173,34 @@
       <h2 id="sub">Forging Stages</h2>
       <div class="timeline-container">
         <div class="card">
-          <div class="card-icon"><i class="bi bi-calendar"></i></div>
+          <div class="card-icon"><i class="bi bi-fire"></i></div>
           <div>
-            <span class="card-tag">Birth of The Curve</span>
-            <h3>Heian Period (795-1185)</h3>
-            <p>The earliest forms of curved swords began to appear.</p>
+            <span class="card-tag">Smelting & Selection</span>
+            <h3>Tamahagane Creation</h3>
+            <p>Traditional clay furnace produces jewel steel, carefully selected for quality and carbon content.</p>
           </div>
         </div>
 
         <div class="card">
-          <div class="card-icon"><i class="bi bi-shield"></i></div>
+          <div class="card-icon"><i class="bi bi-hammer"></i></div>
           <div>
-            <span class="card-tag">Golden Age</span>
+            <span class="card-tag">Folding & Forging</span>
             <div class="card-content">
-              <h3>Kamakura Period (1185-1333)</h3>
+              <h3>Steel Purification</h3>
               <p>
-                The golden age of sword making, Master swordsmiths perfected...
+                Steel is folded thousands of times to remove impurities and create layered structure.
               </p>
             </div>
           </div>
         </div>
 
         <div class="card">
-          <div class="card-icon"><i class="bi bi-stars"></i></div>
+          <div class="card-icon"><i class="bi bi-droplet"></i></div>
           <div>
-            <span class="card-tag">Symbol Of Status</span>
-            <h3>Edo Period (1603-1868)</h3>
+            <span class="card-tag">Hardening & Polishing</span>
+            <h3>Differential Tempering</h3>
             <p>
-              Katana became a symbol of samurai status and honor, evolving into
-              works of art as much as weapons.
+              Clay coating and water quenching create the signature curve and Hamon temper line.
             </p>
           </div>
         </div>
