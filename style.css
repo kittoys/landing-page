@@ -106,16 +106,14 @@ body {
 }
 
 .btn-katana:hover {
-  background-color: #3a5a89;
+  background-color: #5475a7;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(74, 112, 169, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid #efece3;
+  border-color: rgb(0, 0, 0);
+
 }
 
-/* Focus state untuk button */
-.btn-katana:focus {
-  outline: 3px solid #efece3;
-  outline-offset: 3px;
-}
 
 .btn-katana:active {
   transform: translateY(0);
